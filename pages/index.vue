@@ -1,34 +1,17 @@
 <template>
   <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        playground-nuxt-storybook
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
+    <StorySampleLink text="h"></StorySampleLink>
   </div>
 </template>
 
 <script>
-export default {}
+import StorySampleLink from "@/components/StorySampleLink.vue"
+
+export default {
+  components:{
+    StorySampleLink,
+  }
+}
 </script>
 
 <style>
@@ -51,7 +34,7 @@ export default {}
     'Quicksand',
     'Source Sans Pro',
     -apple-system,
-    BlinkMacSystemFont,
+    BStorySampleLinkMacSystemFont,
     'Segoe UI',
     Roboto,
     'Helvetica Neue',
@@ -72,7 +55,7 @@ export default {}
   padding-bottom: 15px;
 }
 
-.links {
+.StorySampleLinks {
   padding-top: 15px;
 }
 </style>
